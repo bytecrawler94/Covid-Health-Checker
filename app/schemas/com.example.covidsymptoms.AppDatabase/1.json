@@ -1,0 +1,112 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "2cc4d042584e7f658ee3c87520dbad56",
+    "entities": [
+      {
+        "tableName": "UserInfo",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `timestamp` TEXT, `heartRate` REAL NOT NULL, `breathingRate` REAL NOT NULL, `fever` REAL NOT NULL, `cough` REAL NOT NULL, `tiredness` REAL NOT NULL, `shortnessOfBreath` REAL NOT NULL, `muscleAches` REAL NOT NULL, `chills` REAL NOT NULL, `soreThroat` REAL NOT NULL, `runnyNose` REAL NOT NULL, `headache` REAL NOT NULL, `chestPain` REAL NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "heartRate",
+            "columnName": "heartRate",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "breathingRate",
+            "columnName": "breathingRate",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fever",
+            "columnName": "fever",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cough",
+            "columnName": "cough",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tiredness",
+            "columnName": "tiredness",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shortnessOfBreath",
+            "columnName": "shortnessOfBreath",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "muscleAches",
+            "columnName": "muscleAches",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chills",
+            "columnName": "chills",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "soreThroat",
+            "columnName": "soreThroat",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "runnyNose",
+            "columnName": "runnyNose",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "headache",
+            "columnName": "headache",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chestPain",
+            "columnName": "chestPain",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '2cc4d042584e7f658ee3c87520dbad56')"
+    ]
+  }
+}

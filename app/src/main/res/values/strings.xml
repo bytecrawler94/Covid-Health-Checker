@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">COVID Diagnostics</string>
+    <string-array name="symptoms_array">
+        <item>Fever</item>
+        <item>Cough</item>
+        <item>Tiredness</item>
+        <item>Shortness of Breath</item>
+        <item>Muscle Aches</item>
+        <item>Chills</item>
+        <item>Sore Throat</item>
+        <item>Runny Nose</item>
+        <item>Headache</item>
+        <item>Chest Pain</item>
+    </string-array>
+    <string name="upload_symptoms_button">Upload Symptoms</string>
+    <string name="update_button">Update</string>
+    <string name="symptom_page_heading">Select a Symptom</string>
+    <string name="record_button">Record Video</string>
+    <string name="upload_signs">Upload Signs</string>
+    <string name="measure_pulse">Measure Heart Rate</string>
+    <string name="measure_breathing">Measure Respiratory Rate</string>
+
+</resources>

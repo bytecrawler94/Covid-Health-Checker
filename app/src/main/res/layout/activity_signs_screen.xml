@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage"
+    android:background="@drawable/wall5">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Hello, user"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_record_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:padding="15dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#919191"
+        android:textColor="#FFFFFF"
+        android:text="@string/record_button"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tv_heart_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/btn_record_video"
+        android:text="0.00"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_measure_heart_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/measure_pulse"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_heart_rate"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#919191"/>
+
+    <TextView
+        android:id="@+id/tv_breathing_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="0.00"
+        android:layout_below="@+id/btn_measure_heart_rate"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_measure_breathing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/measure_breathing"
+        android:layout_below="@+id/tv_breathing_rate"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#919191"/>
+
+    <Button
+        android:id="@+id/btn_upload_signs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/upload_signs"
+        android:layout_below="@+id/btn_measure_breathing"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#919191"/>
+
+    <Button
+        android:id="@+id/btn_upload_symptoms_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_symptoms_button"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/btn_upload_signs"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#919191"/>
+
+</RelativeLayout>
